@@ -359,7 +359,7 @@ public class PickerViewModule extends ReactContextBaseJavaModule implements Life
                 WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
                 Window window = dialog.getWindow();
                 if (window != null) {
-                    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.L) {
                         window.setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
                     }else{
                         if (MIUIUtils.isMIUI()) {
